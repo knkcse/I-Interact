@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	int a[n],b[n];
+	printf("Enter ur no.of micontrollers\n");
+	scanf("%d",&n);
+		for(i=0;i<n;i++)
+		{
+			scanf("%d",&a[i]);
+			b[i]=a[i];
+					
+		}
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==a[i+1])
+		{
+			printf("stop\n");
+			break;
+		}
+		else if(a[i]==a[i+1] && a[i+1]==a[i+2])
+		{
+			printf("stop\n");
+			break;
+		}
+		else if(a[i]==a[i+1] && a[i+1]==a[i+2] && a[i]==a[i+2])
+		{
+			printf("stop\n");
+			break;
+		}
+		else
+		{
+		
+		}
+	}
+	
+	
+	
+}

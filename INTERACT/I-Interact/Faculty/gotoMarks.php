@@ -1,0 +1,12 @@
+<?php
+session_start();
+$faculty_id=$_SESSION['faculty_id'];
+$student_id=$_GET['id'];
+$subject=$_GET['subject'];
+$assignment=$_GET['assignment'];
+$_SESSION['faculty_id']=$faculty_id;
+$_SESSION['student_id']=$student_id;
+$_SESSION['subject']=$subject;
+$_SESSION['assignment']=$assignment;
+header("Location:giveMarksForAssignment.php");
+?>
